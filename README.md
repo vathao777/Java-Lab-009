@@ -12,11 +12,17 @@
 
 1. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture an image of a diagram showing the local variables and parameters of main and riddle just before riddle returns for the code below.
     * Save the image taken above to your project as Part1_2.jpg.
+    * ![Part1_2.jpg](..%2F..%2FOneDrive%2FDesktop%2FVa%20Thao%2FCS-12%2FLab%2009%2FPart1_2.jpg)
 2. Answer the following question in the **text** block below:
     * Is the **blank** object mutable or immutable? How can you tell?
 
 ```text
-PUT ANSWER TO #2 HERE
+blank object in the provided Java code is mutable.
+ This can be inferred from the fact that its state changes 
+ after being passed as a parameter to the riddle method. 
+ In the riddle method, both the x parameter and the p 
+ parameter's x and y values are used in calculations, 
+indicating that the Point object is mutable and its state can be modified.
 ```
 
 ```java
@@ -41,13 +47,16 @@ public class Puzzler {
 
 3. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture a stack diagram showing the state of the below program just before **findCenter** returns.
     * Save the image taken above to your project as Part1_3.jpg.
+   ![img_1.png](img_1.png)
 4. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture a stack diagram showing the state of the program just before **distance** returns.
     * Save the image taken above to your project as Part1_4.jpg.
+    * ![img_2.png](img_2.png)
 5. Answer the following question below in the **text** block below:
     * Explain how the return values from #3 and #4 differ.
 
 ```text
-PUT ANSWER TO #5 HERE
+#3 (findCenter(Rectangle box)) returns a Point object representing a position,
+ while #4(distance(center, blank)) returns a double value representing a distance.
 ```
 
 ```java
@@ -83,18 +92,24 @@ Recall that aliases are two variables that refer to the same object.
 
 1. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture a diagram that shows the state of the program just before the end of main.
     * Save the image taken above to your project as Part2_1.jpg.
+    * ![img_3.png](img_3.png)
 2. What is the output of the program?
     * Put the output in the text block below
 
 ```text
-PUT ANSWER TO #2 HERE
+(5, 8)
 ```
 
 3. At the end of main, are p1 and p2 aliased? Why or why not?
     * Put your answer in the text block below
 
 ```text
-PUT ANSWER TO #3 HERE
+
+At the end of main, p1 and p2 are not aliased. Aliasing occurs 
+when two variables refer to the same object in memory. In this case, 
+p1 and p2 refer to different Point objects returned by the findCenter
+ method for different Rectangle objects (box1 before and after grow method call). 
+ Therefore, p1 and p2 are not aliased; they reference distinct Point objects.
 ```
 
 ```java
@@ -140,6 +155,7 @@ for (int i = 0; i < s.length(); i++) {
 1. Encapsulate the above fragment in a method in the [StringPlayground](src/StringPlayground.java) class that takes a string argument and returns the final value of count.
 2. Test your method with multiple strings, including some that are balanced and some that are not.
     * Screenshot your output and add it to your project as Part3_2.jpg
+    * ![img_4.png](img_4.png)
 3. Generalize the code so that it works on any string.
     * What could you do to generalize it more?
 
