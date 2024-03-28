@@ -12,7 +12,7 @@
 
 1. Using the [Python Tutor code visualizer](https://pythontutor.com/java.html#mode=edit) for Java, capture an image of a diagram showing the local variables and parameters of main and riddle just before riddle returns for the code below.
     * Save the image taken above to your project as Part1_2.jpg.
-    * ![Part1_2.jpg](..%2F..%2FOneDrive%2FDesktop%2FVa%20Thao%2FCS-12%2FLab%2009%2FPart1_2.jpg)
+    * ![img_5.png](img_5.png)
 2. Answer the following question in the **text** block below:
     * Is the **blank** object mutable or immutable? How can you tell?
 
